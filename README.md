@@ -1,2 +1,34 @@
-# CoachCoder
-Code Coach is a desktop learning app for Python, C++, and C#. Explore bite-sized lessons, study examples, and practise in a built-in editor. Save your drafts locally, track completed lessons and XP, and build a daily study streak, all without sending your work to a server. A simple, private space to keep learning at your own pace.
+# Code Coach
+
+A standalone desktop app for learning Python, C++, and C#. It includes short
+lessons, coding challenges, a practice editor, saved drafts, XP, and study
+streaks.
+
+## Set up
+
+From this project folder, create and activate a virtual environment, then
+install the dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+On Windows, activate the environment with `.venv\Scripts\activate` instead.
+
+## Run
+
+```bash
+python -m code_coach
+```
+
+Progress is stored locally in `~/.code_coach/progress.json`. The practice
+editor saves your work but does not execute it, so use a Python interpreter or
+a C++/C# compiler to run and check your solutions.
+
+## Test
+
+```bash
+python -m pytest tests
+```
